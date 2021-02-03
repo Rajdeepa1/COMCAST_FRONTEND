@@ -1,0 +1,92 @@
+[
+  {
+    "cadId": "35672",
+    "status": "Completed",
+    "platform": "Nexus 5000",
+    "release": "CAD-NK-5000",
+    "cluster": "",
+    "updatedOn": "11 Dec 2020",
+    "updatedBy": "Sayali"
+  },
+  {
+    "cadId": "35673",
+    "status": "Completed",
+    "platform": "HPE Accelerator V2",
+    "release": "CAD-V8-FkL1",
+    "cluster": "",
+    "updatedOn": "11 Nov 2020",
+    "updatedBy": "Rajdeepa"
+  },
+  {
+    "cadId": "35674",
+    "status": "Completed",
+    "platform": "Altair SmartWorks Conclusion",
+    "release": "CAD-J7-4kRT",
+    "cluster": "",
+    "updatedOn": "11 Nov 2020",
+    "updatedBy": "Rayyan"
+  },
+  {
+    "cadId": "35675",
+    "status": "In Progress",
+    "platform": "Cisco Cloud Connect",
+    "release": "CAD-TS-YW5M",
+    "cluster": "",
+    "updatedOn": "11 Dec 2020",
+    "updatedBy": "Gopal"
+  },
+  {
+    "cadId": "35676",
+    "status": "Completed",
+    "platform": "Oracle IoT",
+    "release": "CAD-RX-FQ5A",
+    "cluster": "",
+    "updatedOn": "11 Sept 2020",
+    "updatedBy": "Richard"
+  },
+  {
+    "cadId": "35677",
+    "status": "Completed",
+    "platform": "Samsung Artik Cloud",
+    "release": "CAD-DS-61HW",
+    "cluster": "",
+    "updatedOn": "11 Oct 2020",
+    "updatedBy": "Raghul"
+  },
+  {
+    "cadId": "35678",
+    "status": "Completed",
+    "platform": "ThingWorx",
+    "release": "CAD-CM-002N",
+    "cluster": "",
+    "updatedOn": "11 Aug 2020",
+    "updatedBy": "Smita"
+  },
+  {
+    "cadId": "35679",
+    "status": "In Progress",
+    "platform": "Particle",
+    "release": "CAD-SR-E4T8",
+    "cluster": "",
+    "updatedOn": "11 Feb 2020",
+    "updatedBy": "Vipul"
+  },
+  {
+    "cadId": "35680",
+    "status": "Completed",
+    "platform": "Nexus 5000",
+    "release": "CAD-KJ-8IOQ",
+    "cluster": "",
+    "updatedOn": "11 Mar 2020",
+    "updatedBy": "Sayali"
+  },
+  {
+    "cadId": "35681",
+    "status": "Completed",
+    "platform": "IRI Voracity",
+    "release": "CAD-NK-5NF2",
+    "cluster": "",
+    "updatedOn": "11 Dec 2020",
+    "updatedBy": "Rayyan"
+  }
+]

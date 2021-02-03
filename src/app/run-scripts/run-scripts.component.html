@@ -1,0 +1,90 @@
+
+
+    <!--div class="content-fluid"-->
+    <main>
+    <nav class="header" id="styleguideheader">
+        <div class="container-fluid">
+            <div class="header-panels">
+                <div class="header-panel hidden-lg-down">
+                    <a class="header__logo" href="http://www.cisco.com" target="_blank">
+                        <span class="icon-cisco"></span>
+                    </a>
+                    <h1 class="header__title">COMCAST</h1>
+                </div>
+                <div class="header-panel header-panel--center base-margin-left base-margin-right">
+                    <a class="header__logo hidden-xl-up" href="http://www.cisco.com" target="_blank">
+                        <span class="icon-cisco"></span>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div class="base-margin-top dbl-margin-bottom depth-3">
+    <div class="section">
+    <div class="responsive-table">
+        <table class="table table--bordered" aria-label="Bordered table example">
+            <thead>
+                <tr>
+                    
+                    
+                    <th class="sortable" style="width: 50%;">Scripts<span class="sort-indicator icon-dropdown"></span></th>
+                    <th>Run</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+             
+                    <td>Bug Customer Visibility Details Script</td>
+                    <td><button class="btn" (click)="showDialog('0')">Run</button></td>
+                    
+                </tr>
+                <tr>
+                  
+                    <td>Pcn report script</td>
+                    <td><button class="btn" (click)="showDialog('1')">Run</button></td>
+                   
+                </tr>
+                <tr>
+                  
+                    <td>Topic Search for Service Requests Script</td>
+                    <td><button class="btn" (click)="showDialog('2')">Run</button></td>
+                   
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    </div>
+    <!--div id="modal_1" class="hhidden">
+        Dialog Header
+        <button (click)="closeDialog()">Close Dialog</button>
+    </div-->
+    <div class="modal hide" id="modal-default">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <a class="modal__close" (click)="closeDialog()"><span class="icon-close"></span></a>
+                <div class="modal__header">
+                    <div class="modal__title">{{title}}</div>
+                </div>
+                <div class="modal__body">
+                   
+                   <p class="subtitle">{{input_disp}}</p>
+                   <input type="text"  #titleInput [(ngModel)]="value" [value]="value">
+                </div>
+                <div class="modal__footer">
+                    <button class="btn" (click)="runscript(titleInput.value)">Run</button>
+                    <button class="btn" (click)="closeDialog()">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </main>
+    
+   

@@ -1,0 +1,98 @@
+/*
+================================================================================
+Cisco Brand UI Kit Dark Theme
+
+This file contains just the overrides for the dark theme. The default theme
+contains the entire set of custom CSS properties which can be overridden.
+--------------------------------------------------------------------------------
+*/
+
+:root .cui[data-theme="dark"] {
+
+    /* Font */
+    --cui-font-weight: normal;
+    --cui-font-color: var(--cui-color-white);
+    --cui-color-dark: var(--cui-color-gray-900);
+    --cui-color-light: var(--cui-color-white);
+
+    /* Backdrops and Backgrounds */
+    --cui-background-alt: var(--cui-color-gray-700);
+    --cui-background-color: var(--cui-color-gray-900);
+    --cui-background-active: var(--cui-color-gray-700);
+    --cui-background-inactive: var(--cui-color-gray-800);
+    --cui-background-hover: var(--cui-color-gray-700);
+    --cui-background-selected: var(--cui-color-gray-600);
+
+    --cui-theme-secondary: var(--cui-color-white);
+    --cui-theme-secondary-darker: var(--cui-color-gray-100);
+    --cui-theme-secondary-lighter: var(--cui-color-white);
+    --cui-theme-secondary-color: var(--cui-color-dark);
+    --cui-theme-secondary-rgb: 30, 68, 113;
+    --cui-theme-primary-link-decoration: none;
+
+    /* Borders */
+    --cui-border-color: var(--cui-color-gray-700);
+    --cui-border: 1px solid var(--cui-border-color);
+    --cui-border-radius: 0px;
+
+    /* Shadows */
+    --cui-shadow-outset-color: var(--cui-color-black);
+
+    /* Font and Link Color */
+    --cui-font-color: var(--cui-color-white);
+    --cui-active-color: var(--cui-color-white);
+    --cui-inactive-color: var(--cui-color-gray-500);
+    --cui-link-color: var(--cui-accent-color);
+    --cui-link-color-active: var(--cui-accent-color);
+}
+
+.cui[data-theme="dark"] {
+
+    /* Alert */
+    .alert {
+        --cui-alert-background-opacity: .4;
+    }
+
+    /* Dropdown */
+    .dropdown {
+        --cui-dropdown-background-color: var(--cui-color-gray-800);
+        --cui-dropdown-icon-selected: var(--cui-color-white);
+    }
+
+    /* Form */
+    .form-group,
+    .checkbox,
+    .radio,
+    .select,
+    .switch {
+        --cui-form-label-spacing: 7px;
+        --cui-form-background: var(--cui-color-gray-800);
+    }
+
+    /* Header */
+    .header {
+        --cui-header-border-bottom: none;
+        --cui-header-background: var(--cui-color-gray-800);
+    }
+
+    /* Modal */
+    .modal {
+            --cui-modal-background: var(--cui-color-gray-700);
+        }
+
+    /* Pagination */
+    .pagination {
+        --cui-pagination-background: var(--cui-color-gray-700);
+    }
+
+    /* Radio */
+    .radio {
+        --cui-radio-border-thickness: 2px;
+        --cui-radio-knob-background: var(--cui-background-color);
+    }
+
+    /* Switch */
+    .switch {
+        --cui-switch-slider-background: var(--cui-color-gray-600);
+    }
+}

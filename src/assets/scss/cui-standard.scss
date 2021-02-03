@@ -1,0 +1,128 @@
+@import "themes/default.scss";
+
+@import "build/index.scss";
+
+@import "vendor/bootstrap.scss";
+@import "vendor/tooltip/balloon.scss";
+
+@import "base.scss";
+@import "cui-font.scss";
+
+.cui {
+    @import "utilities/index.scss";
+    @import "primitives/index.scss";
+    @import "components/index.scss";
+    @import "layout/index.scss";
+}
+
+.cui .maincontent {
+    padding-top: var(--cui-header-height);
+    .CADPanelCol{
+        max-width: 94.75%;
+        flex: 0 0 94.75%;
+    }
+    .sidebar {
+        padding-top: var(--cui-header-height);
+
+        #rootSidebar{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 90vh;
+            width: 100%;
+            a{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .cadIcon{
+                margin: 10px 0;
+                font-size: 24px;
+            }
+        }
+        // 
+    }
+    // 
+}
+.alert__message{ font-size: 14px;}
+.dropdown.ng-invalid.ng-touched, .errorField{border:1px solid #A44;}
+.errorField.ng-valid{border:none;}
+.requiredField{color: #A44;}
+.CADFloatLeft{float: left;}
+.CADFloatRight{float: right;}
+.CADDisplayInlineBlk{ display: inline-block;}
+.p-datatable .p-datatable-thead > tr > th{font-size: 14px; font-weight: bold;}
+.p-datatable .p-datatable-tbody > tr > td{font-size: 14px;}
+.CADPanelHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.cadIcon span{ padding-left: 10px; font-family: var(--cui-font-stack);}
+.cadDivider {
+    margin-top: var(--cui-border-thickness);
+    margin-bottom: var(--cui-spacing);
+    border-top: var(--cui-border-thickness) solid var(--cui-color-gray-400);
+}
+.p-dialog-header{
+    border-bottom: 1px solid var(--cui-color-gray-400) !important; 
+}
+// Dialogbox Form Content
+.CADForm {
+    padding-top: 10px;
+    font-size: var(--cui-font-size);
+    label{ display: inline-flex; padding-bottom: 5px; font-weight: bold;}
+    .dropdown, .p-dropdown{ width: 100%;}
+    .radioButtonLabel{ display: inline-flex; padding: 0 10px ;}
+
+    /***** Example custom styling *****/
+    .fileUpload 
+    {
+        position: relative;
+        .fileUploadBtn {
+            position: absolute; left: 10px; top: -2px; z-index: 1;
+            cursor: pointer;
+            background-color: #fff !important;
+            display: inline-block;
+            padding: 0 15px;
+            min-width: 92px;
+            line-height: 22px;
+            font-size: var(--cui-font-size-sm);
+            border-color: var(--cui-theme-dark);
+            color: var(--cui-font-color);
+            text-align: center;
+            text-decoration: none;
+            transition-duration: initial !important;
+            transition: all var(--cui-animate-speed) var(--cui-animate-timing-function);
+            text-transform: var(--cui-button-text-transform);
+            
+            :focus, :active, :hover{
+                outline: 0 none;
+            }
+        }
+
+        input[type="file"] {
+            // visibility: hidden;
+            :focus, :active, :hover{
+                outline: 0 none;
+            }
+        }
+    }
+  .fileUpload :invalid + span {
+    color: #A44;
+  }
+  .fileUpload :valid + span {
+    color: #4A4;
+  }
+}
+.CADFooter{ 
+    
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    border-top: 1px solid var(--cui-color-gray-400);
+    width: 100%;
+    padding: 10px;
+    text-align: right;
+
+}
