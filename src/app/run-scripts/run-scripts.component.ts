@@ -40,15 +40,15 @@ runscript(inp:string){
   //this.input=inp;
   //this.runscriptsservice.getConfig(inp,'Blob').subscribe((data:any) =>{this.output=data;this.downloadFile();});
   if(this.selection=='0'){
-  this.runscriptsservice.getConfig(inp,'arraybuffer','http://localhost:8000/api/test?p=').subscribe(data => this.downLoadFile(data, "application/vnd.ms-excel","report.xlsx"));
+  this.runscriptsservice.getConfig(inp,'arraybuffer','http://52.36.151.99:8000/api/test?p=').subscribe(data => this.downLoadFile(data, "application/vnd.ms-excel","report.xlsx"));
   }
   else if(this.selection=='1')
   {
-    this.runscriptsservice.getConfig(inp,'arraybuffer','http://localhost:8000/api/pcn?p=').subscribe(data => this.downLoadFile(data, "application/vnd.openxmlformats-officedocument.presentationml.presentation","report.pptx"));
+    this.runscriptsservice.getConfig(inp,'arraybuffer','http://52.36.151.99:8000/api/pcn?p=').subscribe(data => this.downLoadFile(data, "application/vnd.openxmlformats-officedocument.presentationml.presentation","report.pptx"));
 
   }
   else if(this.selection=='2'){
-    this.runscriptsservice.getConfig(inp,'arraybuffer','http://localhost:8000/api/topic?p=').subscribe(data => this.downLoadFile(data, "application/vnd.ms-excel","report.xlsx"));
+    this.runscriptsservice.getConfig(inp,'arraybuffer','http://52.36.151.99:8000/api/topic?p=').subscribe(data => this.downLoadFile(data, "application/vnd.ms-excel","report.xlsx"));
   }
   
 }
